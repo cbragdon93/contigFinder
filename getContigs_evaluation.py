@@ -1,5 +1,7 @@
+# import third party modules
 from random import sample
 import time
+# import in-house modules
 from getContigs import getContigs
 
 '''
