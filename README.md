@@ -1,6 +1,6 @@
 # contigFinder
 
-suite of python scripts to get the start and end points of each consecutive contig in a sorted list
+suite of python scripts to get the start and end points of each contig in a sorted list
 
 Contents:
 
