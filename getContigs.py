@@ -22,10 +22,13 @@ def getContigs(myList):
             else:
                 consecutiveResult.append(thisChunk)
             thisChunk = []
-        elif i == myListLength-1:
+        # edge case was here. want to detect the end of the
+        # list, regardless of contiguity status(i.e. needs to 
+        # be its own control block)
+        if i == myListLength-1:
             thisChunk.append(myList[i])
             if len(thisChunk)>1:
                 consecutiveResult.append([thisChunk[0], thisChunk[-1]])
             else:
-                consecutiveResult.append(thisChunk)            
+                consecutiveResult.append(thisChunk)
     return consecutiveResult
